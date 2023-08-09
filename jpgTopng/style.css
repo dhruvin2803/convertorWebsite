@@ -1,0 +1,685 @@
+body, h1, h2, h3, p, input, button {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #3498db;
+    color: white;
+    padding: 20px 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+nav {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+
+.hero {
+    text-align: center;
+    padding: 100px 0;
+    background-color: #f9f9f9;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    display: grid;
+    place-items: center;
+}
+
+.container h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.container p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    font-family: 'Open Sans', sans-serif;
+    color: #555;
+}
+
+input[type="file"] {
+    display: none;
+}
+
+#chooseButton {
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    flex: 1; /* Distribute available space evenly */
+    margin: 0 5px; /* Add some margin between buttons */
+}
+
+#convertButton {
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    flex: 1; /* Distribute available space evenly */
+    margin-left: 20px; /* Add margin to the right side */
+}
+
+#chooseButton:hover, #convertButton:hover {
+    background-color: #2980b9;
+}
+
+#downloadLink {
+    display: none;
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color: #2ecc71;
+    color: white;
+    border-radius: 5px;
+    transition: background-color 0.2s;
+    margin-top: 20px; /* Add margin to the top */
+    font-family: 'Roboto', sans-serif;
+}
+
+#downloadLink:hover {
+    background-color: #27ae60;
+}
+
+.container1 {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.features {
+    background-color: #f9f9f9;
+    padding: 80px 0;
+}
+
+.features h2 {
+    font-size: 24px;
+    margin-bottom: 40px;
+    text-align: center; /* Center the Features title */
+}
+
+.feature {
+    margin-bottom: 30px;
+    text-align: center;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.2s;
+}
+
+.feature:hover {
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+}
+
+.feature h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    font-family: 'Roboto', sans-serif;
+    color: #3498db;
+}
+
+.feature p {
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+    color: #333;
+}
+
+.file-upload {
+    display: flex;
+    align-items: center;
+}
+
+#selectedFileName {
+    margin-left: 4px;
+    font-size: 14px;
+    color: #555;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+/* About Section */
+.about {
+    background-color: #f9f9f9;
+    padding: 80px 0;
+}
+
+.about-content {
+    flex: 1;
+    padding-right: 40px;
+}
+
+
+.about h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.about p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    font-family: 'Open Sans', sans-serif;
+    color: #333;
+}
+
+.about-text {
+    color: #555;
+}
+
+.about-image {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-image img {
+    max-width: 80%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+}
+/* Style the "Remove" button */
+#removeButton {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    transition: color 0.2s;
+    display: none;
+    margin-left: 5px; /* Add margin to the left side */
+}
+
+#removeButton i {
+    color: #e74c3c;
+    font-size: 18px;
+}
+
+#removeButton:hover i {
+    color: #c0392b;
+}body, h1, h2, h3, p, input, button {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #3498db;
+    color: white;
+    padding: 20px 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+nav {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+
+.hero {
+    text-align: center;
+    padding: 100px 0;
+    background-color: #f9f9f9;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    display: grid;
+    place-items: center;
+}
+
+.container h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.container p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    font-family: 'Open Sans', sans-serif;
+    color: #555;
+}
+
+input[type="file"] {
+    display: none;
+}
+
+#chooseButton {
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    flex: 1; /* Distribute available space evenly */
+    margin: 0 5px; /* Add some margin between buttons */
+}
+
+#convertButton {
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    flex: 1; /* Distribute available space evenly */
+    margin-left: 20px; /* Add margin to the right side */
+}
+
+#chooseButton:hover, #convertButton:hover {
+    background-color: #2980b9;
+}
+
+#downloadLink {
+    display: none;
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color: #2ecc71;
+    color: white;
+    border-radius: 5px;
+    transition: background-color 0.2s;
+    margin-top: 20px; /* Add margin to the top */
+    font-family: 'Roboto', sans-serif;
+}
+
+#downloadLink:hover {
+    background-color: #27ae60;
+}
+
+.container1 {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.features {
+    background-color: #f9f9f9;
+    padding: 80px 0;
+}
+
+.features h2 {
+    font-size: 24px;
+    margin-bottom: 40px;
+    text-align: center; /* Center the Features title */
+}
+
+.feature {
+    margin-bottom: 30px;
+    text-align: center;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.2s;
+}
+
+.feature:hover {
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+}
+
+.feature h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    font-family: 'Roboto', sans-serif;
+    color: #3498db;
+}
+
+.feature p {
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+    color: #333;
+}
+
+.file-upload {
+    display: flex;
+    align-items: center;
+}
+
+#selectedFileName {
+    margin-left: 4px;
+    font-size: 14px;
+    color: #555;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+/* About Section */
+.about {
+    background-color: #f9f9f9;
+    padding: 80px 0;
+}
+
+.about-content {
+    flex: 1;
+    padding-right: 40px;
+}
+
+
+.about h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.about p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    font-family: 'Open Sans', sans-serif;
+    color: #333;
+}
+
+.about-text {
+    color: #555;
+}
+
+.about-image {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-image img {
+    max-width: 80%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+}
+/* Style the "Remove" button */
+#removeButton {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    transition: color 0.2s;
+    display: none;
+    margin-left: 5px; /* Add margin to the left side */
+}
+
+#removeButton i {
+    color: #e74c3c;
+    font-size: 18px;
+}
+
+#removeButton:hover i {
+    color: #c0392b;
+}body, h1, h2, h3, p, input, button {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #3498db;
+    color: white;
+    padding: 20px 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+nav {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+
+.hero {
+    text-align: center;
+    padding: 100px 0;
+    background-color: #f9f9f9;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    display: grid;
+    place-items: center;
+}
+
+.container h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.container p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    font-family: 'Open Sans', sans-serif;
+    color: #555;
+}
+
+input[type="file"] {
+    display: none;
+}
+
+#chooseButton {
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    flex: 1; /* Distribute available space evenly */
+    margin: 0 5px; /* Add some margin between buttons */
+}
+
+#convertButton {
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    flex: 1; /* Distribute available space evenly */
+    margin-left: 20px; /* Add margin to the right side */
+}
+
+#chooseButton:hover, #convertButton:hover {
+    background-color: #2980b9;
+}
+
+#downloadLink {
+    display: none;
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color: #2ecc71;
+    color: white;
+    border-radius: 5px;
+    transition: background-color 0.2s;
+    margin-top: 20px; /* Add margin to the top */
+    font-family: 'Roboto', sans-serif;
+}
+
+#downloadLink:hover {
+    background-color: #27ae60;
+}
+
+.container1 {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.features {
+    background-color: #f9f9f9;
+    padding: 80px 0;
+}
+
+.features h2 {
+    font-size: 24px;
+    margin-bottom: 40px;
+    text-align: center; /* Center the Features title */
+}
+
+.feature {
+    margin-bottom: 30px;
+    text-align: center;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.2s;
+}
+
+.feature:hover {
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+}
+
+.feature h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    font-family: 'Roboto', sans-serif;
+    color: #3498db;
+}
+
+.feature p {
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+    color: #333;
+}
+
+.file-upload {
+    display: flex;
+    align-items: center;
+}
+
+#selectedFileName {
+    margin-left: 4px;
+    font-size: 14px;
+    color: #555;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+/* About Section */
+.about {
+    background-color: #f9f9f9;
+    padding: 80px 0;
+}
+
+.about-content {
+    flex: 1;
+    padding-right: 40px;
+}
+
+
+.about h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.about p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    font-family: 'Open Sans', sans-serif;
+    color: #333;
+}
+
+.about-text {
+    color: #555;
+}
+
+.about-image {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-image img {
+    max-width: 80%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+}
+/* Style the "Remove" button */
+#removeButton {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    transition: color 0.2s;
+    display: none;
+    margin-left: 5px; /* Add margin to the left side */
+}
+
+#removeButton i {
+    color: #e74c3c;
+    font-size: 18px;
+}
+
+#removeButton:hover i {
+    color: #c0392b;
+}
+
+.privacypolicy{
+    text-decoration: underline;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
